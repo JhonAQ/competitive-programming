@@ -8,10 +8,10 @@ int main(){
   int rpta = sqrt(c), i = rpta;
 
   while(i){
-    for (int j = 0; j <= i; j++) {
-      int xy = abs((i * i + j * j) - c);
-      if(xy < rpta) rpta = xy;
-    }
+    int j = sqrt(c - i * i);
+    rpta = min(rpta, abs(i*i + j*j - c));
+    j++;
+    rpta = min(rpta, abs(i*i + j*j - c));
     i--;
   }
   cout << rpta<<endl;
