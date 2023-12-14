@@ -3,12 +3,12 @@
 using namespace std;
 
 int main(){
-  int c;
-  scanf("%d", &c);
-  int rpta = sqrt(c), i = rpta;
+  long c;
+  scanf("%ld", &c);
+  long rpta = sqrt(c), i = rpta;
 
   while(i){
-    int j = sqrt(c - i * i);
+    long j = sqrt(c - i * i);
     rpta = min(rpta, abs(i*i + j*j - c));
     j++;
     rpta = min(rpta, abs(i*i + j*j - c));
