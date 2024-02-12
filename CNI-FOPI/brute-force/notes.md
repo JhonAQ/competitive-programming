@@ -9,3 +9,5 @@ Es un enfoque/metodo que analiza todo el `espacio de búsqueda`
   - 1e7 -> 50~100ms
   - 1e8 -> 250~800ms
   - 1e9 -> ~5000ms
+- ¿Cuándo usar?: Cuando no haya otro enfoque, cuando el espacio de búsqueda sea corto
+
