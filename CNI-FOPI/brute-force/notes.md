@@ -11,3 +11,5 @@ Es un enfoque/metodo que analiza todo el `espacio de búsqueda`
   - 1e9 -> ~5000ms
 - ¿Cuándo usar?: Cuando no haya otro enfoque, cuando el espacio de búsqueda sea corto
 
+> [!TIP]
+> Para encontrar una plantilla de CP entrar a [ideone](ideone.com/8XIPil)
