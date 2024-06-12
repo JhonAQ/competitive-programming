@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/dczel/computer-science/competitive-programming/cpp-basics/operators",
-      "program": "/home/dczel/computer-science/competitive-programming/cpp-basics/operators/build/Debug/outDebug",
+      "cwd": "/home/dczel/computer-science/competitive-programming/cpp-basics",
+      "program": "/home/dczel/computer-science/competitive-programming/cpp-basics/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
