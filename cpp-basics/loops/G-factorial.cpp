@@ -2,22 +2,18 @@
 
 using namespace std;
 
-double factorial(double k)
-{
-  if (k == 1)
-    return 1;
-  return k * factorial(k - 1);
-}
-
 int main()
 {
   int tc;
   cin >> tc;
   while (tc--)
   {
-    double k;
+    long long k;
     cin >> k;
-    cout << factorial(k);
-    cout << "\n";
+    long long result = 1;
+    for(int i = 2; i <= k; i++){
+      result *= i;
+    }
+    cout << result << endl;
   }
 }
