@@ -1,7 +1,7 @@
 /*********** MANACHER ALGORTIHM  O(n)***********/
-CALCULA EL MAXIMO PALINDROMO CENTRADO EN i (d[i])
-d1[i] centrado en i longitud impar     /// SSOS d1[2] = 1
-d2[i] centrado en i-1 longitud par  /// SSOS d2[1] = 1
+// CALCULA EL MAXIMO PALINDROMO CENTRADO EN i (d[i])
+d1[i] //centrado en i longitud impar     /// SSOS d1[2] = 1
+d2[i] //centrado en i-1 longitud par  /// SSOS d2[1] = 1
 
 pair<vector<int>, vector<int>> manacher(const string &s) {
 	int n = s.size();
