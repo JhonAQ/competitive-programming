@@ -12,7 +12,6 @@ probFileDest=$(find ./$path/.cph -name ".$fileName*" -type f | head -n 1)
 
 command="sed -i 's#$fileName#$path/$fileName#g' $probFileSurce"
 
-echo $command
 eval $command
 
 cp $probFileSurce $probFileDest
