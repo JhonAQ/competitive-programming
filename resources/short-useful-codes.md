@@ -18,3 +18,13 @@ a ^= b;
 b = a ^ b
 a = a ^ b;
 ```
+## How to know if a number is even or odd: 
+```cpp
+// where n is an integer
+if(n&1)
+  return "Odd";
+
+// With the same idea: 
+if(!(n&1)) // wrap the expression in parenthesis, to avoid precedence errors
+return "Even"
+```
