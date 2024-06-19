@@ -1,0 +1,2 @@
+g++ -std=c++17 src/toolkit/repl.cpp src/core/core.cpp
+g++ -std=c++17 src/toolkit/live.cpp src/core/core.cpp
