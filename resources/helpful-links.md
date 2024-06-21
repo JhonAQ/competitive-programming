@@ -28,3 +28,19 @@ CSES Problem set:
 https://cses.fi/problemset/
 solution (no official)
 https://github.com/superj6/CPcode/tree/master/c%2B%2B%20sol/CSES
+
+How to debug (WA & RE)
+https://usaco.guide/general/debugging-checklist?lang=cpp
+
+SOlutions editorials for CP4: (methods to solve)
+https://cpbook.net
+
+Visualgo: 
+https://visualgo.net/en
+
+github CP4:
+https://github.com/stevenhalim/cpbook-code
+
+C++ documentation: 
+https://en.cppreference.com/w/
+
