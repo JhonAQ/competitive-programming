@@ -28,3 +28,8 @@ if(n&1)
 if(!(n&1)) // wrap the expression in parenthesis, to avoid precedence errors
 return "Even"
 ```
+
+## Redondear un numero:
+```cpp
+int ans = (int) ((double) d + 0.5);
+```
