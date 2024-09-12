@@ -3,7 +3,7 @@
 Yachakunapaq willakuykuna:
 
 - Elvis Capiawan yachaykuna [15 horas]
-  - Ñaupaq grafos yachaykuna [Amaraq]
+  - Ñaupaq grafos yachaykuna [Manaraq]
   - Matematicas sasachakuykuna [15 horas]
 
 - Patara qhelqa yachaykuna [25 horas]
