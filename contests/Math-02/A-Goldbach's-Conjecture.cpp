@@ -6,6 +6,7 @@ using ll = long long;
 const int n = 1000000;
 
 vector<int> primes;
+unordered_set<int> primeSet;
 vector<int> lp(n + 1);
 
 void generatePrimes() {
@@ -13,6 +14,7 @@ void generatePrimes() {
     if (lp[i] == 0) {
       lp[i] = i;
       primes.push_back(i);
+      primeSet.insert(i);
     }
     for (int j = 0; i * primes[j] <= n; ++j) {
       lp[i * primes[j]] = primes[j];
@@ -22,23 +24,14 @@ void generatePrimes() {
 }
 
 void solve(int k) {
-  int left = 0;
-  int right = primes.size() - 1;
-
-  while (left <= right) {
-    int sum = primes[left] + primes[right];
-
-    if (sum == k) {
-      cout << k << " = " << primes[left] << " + " << primes[right] << ln;
+  for (int prime : primes) {
+    if (prime > k / 2) break;
+    int complement = k - prime;
+    if (primeSet.find(complement) != primeSet.end()) {
+      cout << k << " = " << prime << " + " << complement << ln;
       return;
     }
-
-    if (sum < k)
-      ++left;
-    else
-      --right;
   }
-
   cout << "No se va a ejecutar esto xd" << ln;
 }
 
