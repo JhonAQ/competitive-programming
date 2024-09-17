@@ -5,17 +5,18 @@ using ll = long long;
 #define ln "\n"
 const int n = 1000000;
 
-vector<bool> isPrime(n + 1, true);
 vector<int> primes;
+vector<int> lp(n + 1);
 
 void generatePrimes() {
-  isPrime[0] = isPrime[1] = false;
-  for (int i = 2; i <= n; i++) {
-    if (isPrime[i]) {
+  for (int i = 2; i <= n; ++i) {
+    if (lp[i] == 0) {
+      lp[i] = i;
       primes.push_back(i);
-      if ((ll)i * i <= n) {
-        for (int j = i * i; j <= n; j += i) isPrime[j] = false;
-      }
+    }
+    for (int j = 0; i * primes[j] <= n; ++j) {
+      lp[i * primes[j]] = primes[j];
+      if (primes[j] == lp[i]) break;
     }
   }
 }
@@ -28,7 +29,7 @@ void solve(int k) {
     int sum = primes[left] + primes[right];
 
     if (sum == k) {
-      cout << (primes[left] + primes[right]) << " = " << primes[left] << " + " << primes[right] << ln;
+      cout << k << " = " << primes[left] << " + " << primes[right] << ln;
       return;
     }
 
@@ -38,7 +39,7 @@ void solve(int k) {
       --right;
   }
 
-  cout << "Esto nunca se va a ejecutar xd" << ln;
+  cout << "No se va a ejecutar esto xd" << ln;
 }
 
 int main() {
@@ -46,6 +47,5 @@ int main() {
   generatePrimes();
   int c;
   while (cin >> c && c != 0) solve(c);
-
   return 0;
 }
