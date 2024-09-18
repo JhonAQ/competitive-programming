@@ -1,5 +1,6 @@
 *executable
 .vscode
 *.cph
+*.class
 build
 cpbook-code
