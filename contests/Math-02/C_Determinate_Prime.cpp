@@ -1,21 +1,32 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
+typedef unsigned long long ull;
 
-const int N = (1<<64) - 1;
-int lp[N + 1];
-vector<int> pr;
+bitset<32000> isP;
 
-void generatePrimes() {
-  for (int i = 2; i <= N; ++i) {
-    if (lp[i] == 0) {
-      lp[i] = i;
-      pr.push_back(i);
-    }
-    for (int j = 0; j < (int)pr.size() && pr[j] <= lp[i] && i * pr[j] <= N; ++j)
-      lp[i * pr[j]] = pr[j];
-  }
+void generatePrimes(){
+  isP.set();
+  isP[0] = isP[1] = 0;
+  for(int i = 2; i < 32000; i++)
+    if(isP[i])
+      for(int j = i * i; j < 32000; j += i)
+        isP[j] = 0;
 }
 
-int main() {
+int main(){
+  generatePrimes();
+  for(int i = 1; i < 10666; i++){
+    int count = 0;
+    for(int j = 0; j < 31999; j+=i){
+      if(isP[j]){
+        if(count)
+          cout << j << " ";
+        else
+          count++;
+      }
+      else
+      count = 0;
+    }
+  }
 }
