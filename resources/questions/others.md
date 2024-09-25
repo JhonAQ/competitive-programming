@@ -1,0 +1,1 @@
+- que dudas deberia resolver en discord y cuales por meet
