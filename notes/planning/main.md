@@ -5,6 +5,7 @@
 - Dominar el nivel basico de problemas [Ver temario](/notes/planning/Temario.md)
 - Tener facilidad al implementar
   - Entrada / Salida
+  - Fast input Output (youknowwho)
 - Tener buen control de workflow para ejercicios
 
 ## Material disponible
