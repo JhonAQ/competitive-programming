@@ -11,13 +11,14 @@ Sin embargo no sirve cuando es un grafo no conexo.
 
 ## DFS vs backtracking recursivo
 
-Un backtracking resursivo recorre todas las posibles combinaciones en el grafo por lo que es exponencial, en cambio un DFS es eficiente y rapido.
+Un backtracking resursivo recorre todas las posibles combinaciones en el grafo
+por lo que es exponencial, en cambio un DFS es eficiente y rapido.
 
 ## Pseudocodigo
 
 ```txt
 vector visited
-fn dfs(v){
+fn dfs(u){
   visited[u] = true
   for(vertice in u.LA){
     dfs(vertice) if visited[vertice] == false
