@@ -60,3 +60,8 @@ independientes sin importar las decisiones que tomé antes.
 - Encontrar la secuencia del palindromo mas largo
 - Corte de varillas
 - Distancia de corte
+
+## SRTBOT
+
+[Subproblema] -> [Relacion de recurrencia] -> [Orden topológico] ->
+[Caso base] -> [Problema original] -> [Complejidad tiempo]
