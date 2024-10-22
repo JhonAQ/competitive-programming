@@ -24,4 +24,4 @@ vector<int> v = {5, 2, 4, 1, 3};
 sort(v.begin(), v.end());
 ```
 
-- Para crear ordenamientos personalizados debemos usar un comparador
+- Para crear ordenamientos personalizados debemos usar un comparador (funcion que devuelve true o false dependiendo de los dos datos de entrada)
