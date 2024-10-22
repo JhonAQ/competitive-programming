@@ -32,3 +32,16 @@ Explicacion detallada de los materiales disponibles
 - Templates y recursos para cada tema
 - Teoria para cada tema y videos de referencia para profundizar
 - Muchos ejercicios
+
+## Plan de estudios
+
+### CPC - Division bronce
+
+- Hasta fin de año
+- 1 Contest por semana
+
+- Referencias: Material CPC + youknowwho
+
+### Elvis Capia Training
+
+- Modulo principiante e intermedio (desglosar en 2)
