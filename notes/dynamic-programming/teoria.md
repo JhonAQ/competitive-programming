@@ -3,23 +3,23 @@
 Usa la memoizacion para resolver problemas mas grandes en base a problemas
 más pequeños.
 
-- **Iterativo:** De abajo hacia arriba, ***calcula de más***
-- **Recursivo:** De arriba hacia abajo, ***calcula exactamente lo que necesita***
+- **Iterativo:** De abajo hacia arriba, **_calcula de más_**
+- **Recursivo:** De arriba hacia abajo, **_calcula exactamente lo que necesita_**
 
 Se crea una tabla de memoizacion para almacenar los subproblemas, generalmente
-un `array`  o `hashmap`
+un `array` o `hashmap`
 
 ## Procedimientos
 
 1. Formular el problema inicial usando subproblemas recursivos mas pequeños
 2. Resolver esos subproblemas (con recursion u otros metodos) y guardar esas
-**soluciones parciales**
+   **soluciones parciales**
 3. Usar las soluciones parciales junto con la opción mas beneficiosa para resolver
-subproblemas mas grandes.
+   subproblemas mas grandes.
 
 > [!IMPORTANT]
 > El analisis generalmente es:
-> **tiempo x subproblema * cantidad de subproblemas**
+> **tiempo de subproblema \* cantidad de subproblemas**
 
 > [!NOTE]
 > Los calculos se hacen una vez, para las siguientes
@@ -40,12 +40,11 @@ subproblemas mas grandes.
 ### Componentes básicos en DP
 
 - Etapa: Parte del problema donde se puede tomar una decision, y que tiene
-asociados estados
+  asociados estados
 - Estado: Punto de decisión, donde se fija el valor de la decisión
 - Asociaciones: Relaciones recursivas que llevan de un estado a otro
 - Principio de optimalidad: En determinada decisión, las decisiones restantes
-son óptimas e
-independientes sin importar las decisiones que tomé antes.
+  son óptimas e independientes sin importar las decisiones que tomé antes.
 
 ![Diagrama de problemas superpuestos](../img/DP-subproblemas.png)
 
