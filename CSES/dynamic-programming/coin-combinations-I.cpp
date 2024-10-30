@@ -6,9 +6,8 @@ int main(){
   int n, x; cin >> n >> x;
   int MOD = 1000000007;
   vector<int> coins;
-  //vector<int> dp(x + 1, 0);
 	int dp[x + 1];
-	memset(dp, 0, x+ 1);
+	memset(dp, 0, sizeof(dp));
   for(int i = 0; i < n; i++){
     int c; cin >> c;
     coins.push_back(c);
