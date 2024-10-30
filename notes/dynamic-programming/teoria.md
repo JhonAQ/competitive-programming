@@ -3,7 +3,9 @@
 Usa la memoizacion para resolver problemas mas grandes en base a problemas
 más pequeños.
 
-- **Iterativo:** De abajo hacia arriba, **_calcula de más_**
+- **Iterativo:** De abajo hacia arriba, **_calcula de más_** (Permite hacer tecnicas avanzadas de dp, por eso lo prefieren en **CP**)
+  - Mas rapido
+  -
 - **Recursivo:** De arriba hacia abajo, **_calcula exactamente lo que necesita_**
 
 Se crea una tabla de memoizacion para almacenar los subproblemas, generalmente
