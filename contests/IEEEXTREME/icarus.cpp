@@ -27,21 +27,29 @@ int main() {
       /*cout << "char: "<< c << endl;*/
       if(c == 'L'){
         down++;
-        BT[nodoActual].left = sigNodo;
-        Node sigN;
-        BT[sigNodo] = sigN;
-        BT[sigNodo].parent = nodoActual;
-        nodoActual = sigNodo;
-        sigNodo++;
+        if(BT[nodoActual].left == -1){
+          BT[nodoActual].left = sigNodo;
+          Node sigN;
+          BT[sigNodo] = sigN;
+          BT[sigNodo].parent = nodoActual;
+          nodoActual = sigNodo;
+          sigNodo++;
+        } else{
+          nodoActual = BT[nodoActual].left;
+        }
         /*cout << "sigNodo: " << sigNodo << endl;*/
       }else if(c == 'R'){
         down++;
-        BT[nodoActual].right = sigNodo;
-        Node sigN;
-        BT[sigNodo] = sigN;
-        BT[sigNodo].parent = nodoActual;
-        nodoActual = sigNodo;
-        sigNodo++;
+        if(BT[nodoActual].right == -1){
+          BT[nodoActual].right = sigNodo;
+          Node sigN;
+          BT[sigNodo] = sigN;
+          BT[sigNodo].parent = nodoActual;
+          nodoActual = sigNodo;
+          sigNodo++;
+        }else{
+          nodoActual = BT[nodoActual].right;
+        }
         /*cout << "sigNodo: " << sigNodo << endl;*/
       }else if(c == 'U'){
         up++;
