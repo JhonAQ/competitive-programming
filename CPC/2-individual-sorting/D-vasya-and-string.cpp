@@ -1,3 +1,6 @@
+// Concepto importante: BINARY SEARCH ON THE ANSWER
+// Busca la relación entre las soluciones, entre turango de soluciones posibles
+// Aprovecha la información que te da una de ellas para buscar la más óptima con bs
 #include<bits/stdc++.h>
 
 using namespace std;
