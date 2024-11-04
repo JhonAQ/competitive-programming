@@ -2,6 +2,8 @@
 
 Arreglo dinamico, con muchas implementaciones eficientes para guardar/consultar datos.
 
+**No es eficiente sacar/meter elementos del inicio**
+
 ### Funciones utiles
 
 ```cpp
