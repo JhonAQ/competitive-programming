@@ -43,7 +43,7 @@
   - Grafo Euleriano
   - Grafos especiales en CP
 
-## Estructuras de Algoritmos
+## Estructuras de Datos
 
 - Tablas acumulativas
 - Estructuras STL
