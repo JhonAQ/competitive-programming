@@ -11,11 +11,11 @@ int main() {
     for (int num = 1; num <= n; num++) {
       q.push(num);
     }
-    cout << "Discarded cards: ";
+    cout << "Discarded cards:";
     bool first = true;
     while (q.size() > 1) {
-      if (!first) cout << ", ";
-      cout << q.front();
+      if (!first) cout << ",";
+      cout <<" " <<  q.front();
       q.pop();
       first = false;
       q.push(q.front());

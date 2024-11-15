@@ -6,3 +6,6 @@ build
 cpbook-code
 i
 o
+*.in
+*.out
+*.o
