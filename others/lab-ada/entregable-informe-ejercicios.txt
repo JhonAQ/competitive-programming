@@ -1,0 +1,8 @@
+Dado que no se puede subir en formato PDF, aqui está el link al proyecto de overleaf: 
+
+https://www.overleaf.com/read/ghdyrnfbnwwk#6710c4
+
+Y en vista de que tampoco se puede subir mas de un archivo, aqui esta la carpeta con el codigo fuente de los problemas: 
+Ahi también está una version compilada del informe
+
+https://github.com/JhonatanDczel/competitive-programming/tree/main/others/lab-ada
