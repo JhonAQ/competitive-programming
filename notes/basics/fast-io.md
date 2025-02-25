@@ -13,6 +13,12 @@ ios::sync_with_stdio(false); cin.tie(NULL);
 - Fast IO should not be used for interactive problems, when debugging, and when wrtiting production code
 - Use fread and rwrite if I am looking for something even faster (see atached snippets)
 
+## Template: 
+
+```cpp
+const int BUF_SZ = 1 << 15;
+```
+
 ## Code Snippet: Input
 
 ```cpp
@@ -76,4 +82,19 @@ void write_int(int x) {
 // auto-flush output when program exits
 void init_output() { assert(atexit(flush_out) == 0); }
 }  // namespace Output
+```
+
+## Uso: 
+```cpp
+int main() {
+	init_output();
+	int M = read_int();
+	int N = read_int();
+	int ans = 0;
+	for (int i = 0; i < N; i++) {
+		ans = (ans + read_int()) % MOD;
+		if (M == 1) { write_int(ans); }
+	}
+	if (M == 0) { write_int(ans); }
+}
 ```
