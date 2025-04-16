@@ -64,6 +64,11 @@ x |= (x - 1)
 int menSig = x & -x // 1010 & 0101
 ```
 
+> Es potencia de 2?
+```cpp
+bool esPotencia = x & (x - 1) == 0;
+```
+
 ## Funciones utiles de g++
 Se compilan en codigo maquina altamente optimizado y se implementan utilizando instrucciones de procesaro especificas de la arquitectura, lo que permite que sean extremadamente rapidas.
 
