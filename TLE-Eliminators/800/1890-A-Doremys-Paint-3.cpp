@@ -4,31 +4,27 @@ using namespace std;
 int main(){
     int tc; cin >> tc;
     while(tc--){
-        int n; cin >> n;
-        vector<int> list(n, 0);
-        while(n--){
-            int a; cin >> a;
-            list[a]++;
-        }
+      int n; cin >> n;
+      map<int, int> f;
+      while(n--){
+        int a; cin >> a;
+        f[a]++;
+      }
+      if(f.size() > 2){
+        cout << "NO" << '\n';
+        continue;
+      }
+      if(f.size() == 1 ){
+        cout << "YES" << '\n';
+        continue;
+      }
+      int a = f.begin()->second;
+      int b = f.rbegin()->second;
 
-        if(list.size() == 1){
-            cout << "Yes" << endl;
-            continue;
-        }
-
-        if(list.size() != 2){
-            cout << "No" << endl;
-            continue;
-        }
-
-        auto it = list.begin();
-        int a = *it;
-        int b = *next(it);
-
-        if(abs(a - b) == 1){
-            cout << "Yes" << endl;
-        } else {
-            cout << "No" << endl;
-        }
+      if(abs(a - b) <= 1){
+        cout << "YES" << '\n';
+        continue;
+      }
+      cout << "NO" << '\n';
     }
 }
