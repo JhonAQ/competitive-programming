@@ -13,7 +13,23 @@ using vl = vector<ll>;
 const ll INF = 1e18;
 const int MOD = 1e9 + 7;
 
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+    string str; cin >> str;
+    string ans = "";
+    for(int i = 0; i < str.size(); i++){
+        if(str[i] == '0'){
+            ans += '0';
+        }else if(str[i] == '1'){
+            ans += '1';
+        }else{
+            if(ans.size() == 0) continue;
+            ans = ans.substr(0, ans.size() - 1);
+        }
+
+    }
+    cout << ans << endl;
 }
+

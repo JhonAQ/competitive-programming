@@ -13,7 +13,17 @@ using vl = vector<ll>;
 const ll INF = 1e18;
 const int MOD = 1e9 + 7;
 
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+    int cinco = 0;
+    int siete = 0;
+    rep(i, 0, 3){
+        int n; cin >> n;
+        if(n == 5) cinco++;
+        if(n == 7) siete++;
+    }
+    cout << (cinco == 2 && siete == 1 ? "YES" : "NO") << endl;
 }
+

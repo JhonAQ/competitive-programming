@@ -13,7 +13,32 @@ using vl = vector<ll>;
 const ll INF = 1e18;
 const int MOD = 1e9 + 7;
 
+
+map<char, bool> dislike;
+
+bool hasDislike(int n){
+    string str = to_string(n);
+    for(auto s : str){
+        if(dislike[s]) return true;
+    }
+    return false;
+}
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+    int n, k; cin >> n >> k;
+    while(k--){
+        char a; cin >> a;
+        dislike[a] = true;
+    }
+    while(true){
+        if(hasDislike(n)){
+            n++;
+            continue;
+        }
+        cout << n << endl;
+        return 0;
+    }
 }
+

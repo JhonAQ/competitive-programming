@@ -13,7 +13,20 @@ using vl = vector<ll>;
 const ll INF = 1e18;
 const int MOD = 1e9 + 7;
 
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+    int n, l; cin >> n >> l;
+    vector<string> seq(n);
+    for(auto& str : seq){
+        cin >> str;
+    }
+    sort(seq.begin(), seq.end());
+    string ans = "";
+    rep(i, 0, n){
+        ans = ans + seq[i];
+    }
+    cout << ans << endl;
 }
+

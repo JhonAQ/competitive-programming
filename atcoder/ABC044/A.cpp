@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define int long long
 using ll = long long;
 using ii = pair<int, int>;
 using vi = vector<int>;
@@ -13,7 +14,15 @@ using vl = vector<ll>;
 const ll INF = 1e18;
 const int MOD = 1e9 + 7;
 
-int main(){
+signed main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+
+    int n, k, x, y; cin >> n >> k >> x >> y;
+    if(k > n){
+        cout << x * n << endl;
+        return 0;
+    }
+    cout << (ll) k * x + (ll) y * (n - k) << endl;
 }
+

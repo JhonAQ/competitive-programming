@@ -16,4 +16,15 @@ const int MOD = 1e9 + 7;
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+    map<char, int> mp;
+    string str; cin >> str;
+    for(auto s : str){
+        mp[s]++;
+    }
+    bool ans = true;
+    for(auto n : mp){
+        if(n.second & 1) ans = false;
+    }
+    cout << (ans ? "Yes" : "No");
 }
+

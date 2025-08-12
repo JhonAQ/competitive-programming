@@ -13,7 +13,22 @@ using vl = vector<ll>;
 const ll INF = 1e18;
 const int MOD = 1e9 + 7;
 
+
 int main(){
     cin.tie(0)->sync_with_stdio(0);
     cin.exceptions(cin.failbit);
+    int n; cin >> n;
+    int arr[n];
+    for(auto& a : arr) cin >> a;
+    ll ans = INF;
+    for( int t = -100; t <= 100 ; t++){
+        ll cost = 0;
+        for(auto n : arr){
+            cost += ( n - t) * ( n - t);
+        }
+        ans = min(ans, cost);
+    }
+    cout << ans << endl;
+
 }
+
